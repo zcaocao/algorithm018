@@ -29,7 +29,7 @@ count初始化为26个0，遍历单词列表的每个单词，对单词的每个
 2.新元素nums[j]入窗口之前，先检查nums[j]是否大于deque内所有元素，如果大于，根据deque单调减的规则，pop掉deque内所有元素deque.pop()。
 3.新元素nums[j]入队，deque.append(nums[j])
 4.检查是否已形成端口(i>=0)，形成端口后，每入队一个元素则弹出一个当前窗口最大值（对头deque[0])到返回列表res。
-
+```python
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
         deque = collections.deque()
@@ -40,7 +40,7 @@ class Solution:
             deque.append(nums[j])
             if i >= 0: res.append(deque[0])
         return res
-
+```
 
  二叉树的遍历系列
 =================
@@ -53,13 +53,13 @@ class Solution:
 每次根进栈后，将其左子标记为新的根，然后只要根不空，循环遍历到整棵树的最左子进栈。
 最左子进栈后，左子的左为空了，开始出栈，出栈节点append都返回列表里。同时，将出栈节点的右子设为新的根（再往复上面压栈的过程）。
 Note：这里设置新的根时，没有判断当前根的左子或右子是否为空。因为，会在下一次循环时，走到相应的分支（为空就出栈，不空就继续进栈，右子为空时刚好保证根出栈）。
-
-\# Definition for a binary tree node.
-\# class TreeNode:
-\#     def __init__(self, val=0, left=None, right=None):
-\#         self.val = val
-\#         self.left = left
-\#         self.right = right
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 ''' iteration '''
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
@@ -75,7 +75,8 @@ class Solution:
                 ans.append(tmp.val)
                 root = tmp.right
         
-        return ans        
+        return ans
+```        
 
 三，莫里斯遍历
 此方法优点是空间复杂度为O(1). 但改变了树的结构，将树毁成了链表。
