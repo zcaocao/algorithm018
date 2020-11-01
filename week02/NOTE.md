@@ -54,12 +54,12 @@ class Solution:
 最左子进栈后，左子的左为空了，开始出栈，出栈节点append都返回列表里。同时，将出栈节点的右子设为新的根（再往复上面压栈的过程）。
 Note：这里设置新的根时，没有判断当前根的左子或右子是否为空。因为，会在下一次循环时，走到相应的分支（为空就出栈，不空就继续进栈，右子为空时刚好保证根出栈）。
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+\# Definition for a binary tree node.
+\# class TreeNode:
+\#     def __init__(self, val=0, left=None, right=None):
+\#         self.val = val
+\#         self.left = left
+\#         self.right = right
 ''' iteration '''
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
