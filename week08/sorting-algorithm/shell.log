@@ -1,0 +1,114 @@
+gap=7 
+i=7, temp=50 
+j+gap==7 
+ 
+i=8, temp=37 
+j+gap==8 
+ 
+i=9, temp=5 
+j+gap==9 
+ 
+i=10, temp=64 
+j+gap==10 
+ 
+i=11, temp=35 
+j=4; i-gap=4, j+gap=11; arr[j+gap]=35; arr[j]=82 
+j+gap==4 
+ 
+i=12, temp=9 
+j=5; i-gap=5, j+gap=12; arr[j+gap]=9; arr[j]=55 
+j+gap==5 
+ 
+i=13, temp=70 
+j=6; i-gap=6, j+gap=13; arr[j+gap]=70; arr[j]=89 
+j+gap==6 
+ 
+gap=3 
+i=3, temp=32 
+j+gap==3 
+ 
+i=4, temp=35 
+j+gap==4 
+ 
+i=5, temp=9 
+j+gap==5 
+ 
+i=6, temp=70 
+j+gap==6 
+ 
+i=7, temp=50 
+j+gap==7 
+ 
+i=8, temp=37 
+j+gap==8 
+ 
+i=9, temp=5 
+j=6; i-gap=6, j+gap=9; arr[j+gap]=5; arr[j]=70 
+j=3; i-gap=6, j+gap=6; arr[j+gap]=70; arr[j]=32 
+j=0; i-gap=6, j+gap=3; arr[j+gap]=32; arr[j]=22 
+j+gap==0 
+ 
+i=10, temp=64 
+j+gap==10 
+ 
+i=11, temp=82 
+j+gap==11 
+ 
+i=12, temp=55 
+j=9; i-gap=9, j+gap=12; arr[j+gap]=55; arr[j]=70 
+j+gap==9 
+ 
+i=13, temp=89 
+j+gap==13 
+ 
+gap=1 
+i=1, temp=34 
+j+gap==1 
+ 
+i=2, temp=3 
+j=1; i-gap=1, j+gap=2; arr[j+gap]=3; arr[j]=34 
+j=0; i-gap=1, j+gap=1; arr[j+gap]=34; arr[j]=5 
+j+gap==0 
+ 
+i=3, temp=22 
+j=2; i-gap=2, j+gap=3; arr[j+gap]=22; arr[j]=34 
+j+gap==2 
+ 
+i=4, temp=35 
+j+gap==4 
+ 
+i=5, temp=9 
+j=4; i-gap=4, j+gap=5; arr[j+gap]=9; arr[j]=35 
+j=3; i-gap=4, j+gap=4; arr[j+gap]=35; arr[j]=34 
+j=2; i-gap=4, j+gap=3; arr[j+gap]=34; arr[j]=22 
+j+gap==2 
+ 
+i=6, temp=32 
+j=5; i-gap=5, j+gap=6; arr[j+gap]=32; arr[j]=35 
+j=4; i-gap=5, j+gap=5; arr[j+gap]=35; arr[j]=34 
+j+gap==4 
+ 
+i=7, temp=50 
+j+gap==7 
+ 
+i=8, temp=37 
+j=7; i-gap=7, j+gap=8; arr[j+gap]=37; arr[j]=50 
+j+gap==7 
+ 
+i=9, temp=55 
+j+gap==9 
+ 
+i=10, temp=64 
+j+gap==10 
+ 
+i=11, temp=82 
+j+gap==11 
+ 
+i=12, temp=70 
+j=11; i-gap=11, j+gap=12; arr[j+gap]=70; arr[j]=82 
+j+gap==11 
+ 
+i=13, temp=89 
+j+gap==13 
+ 
+3 5 9 22 32 34 35 37 50 55 64 70 82 89 
